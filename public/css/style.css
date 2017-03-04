@@ -1,0 +1,16 @@
+#mi-loguito{
+    width: 60px;
+    height: auto;
+    margin:auto;
+    position: absolute left;
+}
+
+#vainajevi{
+    margin-right: 0px;
+}
+
+#header {
+     position: relative;
+     width: 100%;
+     top: 0;
+}
