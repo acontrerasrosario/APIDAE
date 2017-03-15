@@ -1,31 +1,104 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html>
     <head>
-            <!-- Compiled and minified CSS -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-            <!-- Material Design Icons-->
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <!-- Compiled and minified JavaScript -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-            <link rel="stylesheet" href="./css/style.css">   
-            <script src="./js/jquery-3.1.1.min.js"></script>
-            <script src="./js/header.js"></script>     
-    </head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,500">
+        <script language="JavaScript" type="text/javascript" src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified JavaScript -->
+        <link rel="stylesheet" text="text/css" href="./css/style.css">  
+        <script  type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="./js/materialize.min.js"></script>
+  
+        
+  </head>
 
     <body>
-        <!--Import jQuery before materialize.js-->
-          <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-          <script type="text/javascript" src="js/materialize.min.js"></script>
+   
         
-        <div id="header"></div>
+        <!-- start nav bar -->
+          <nav>
+            <div class="nav-wrapper amber darken-2">
+              
+              
+              <div id ="logo" class="left ">
+                    <a href="javascript:void(0)" class="brand-logo ">
+                        <img src="./img/logo.png" id="header-logo" class="circle left mini-perfil">
+                        <h4>APIDAE</h4>
+                    </a>
+              </div>
+              </ul>
+            </div>
+          </nav>
+        <!-- End nav bar -->
         
+        <!-- Login FORM-->
 
+             <div class="card">
+                <div class="field">
+                  <span class="header">Iniciar Sesi&oacuten</span>
+                  <div class="form-group">
+                    <input id="txtEmail" type="text" required="required" />
+                    <label for="input" class="control-label">Email</label><i class="bar"></i>
+                  </div>
+                  <div class="form-group">
+                    <input id="txtPassword" type="password" required="required" />
+                    <label for="input" class="control-label">Contraseña</label><i class="bar"></i>
+                  </div>
+                  <div class="button-container">
+                    <button id="btnLogin" onclick="LogIn()" type="button" class="button"><span>Log in</span></button>
+                    
+                  </div>
+                  
+                </div>
 
+                <!--register WE DONT USE THIS-->
 
+                <!--<div class="fab">
+                  <i class="zmdi zmdi-account-add"></i>
+                  <div class="field">
+                    <span class="header">Register</span>
+                    <div class="form-group">
+                      <input type="text" required="required" />
+                      <label for="input" class="control-label">Email</label><i class="bar"></i>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" required="required" />
+                      <label for="input" class="control-label">Password</label><i class="bar"></i>
+                    </div>
+                    <div class="form-group">
+                      <input type="password" required="required" />
+                      <label for="input" class="control-label">Password again</label><i class="bar"></i>
+                    </div>
+                    <div class="button-container">
+                      <button type="button" class="button"><span>Submit</span></button>
+                    </div>
+                  </div>
+                </div>-->
 
-
-
-
-
-  </body>
+              </div>
+              
+              <script src ="./js/index.js"></script>
+              <script>
+                firebase.auth().onAuthStateChanged(firebaseUser =>{
+                    var url = window.location.href;
+                    if(firebaseUser){
+                      console.log(firebaseUser);
+                      if(window.location.href !== 'logeed-index.html'){
+                        window.location = 'logeed-index.html';
+                      }
+                    }
+                    else{
+                    console.log('not logged in');
+                    }
+                    
+                  });
+              </script>
+             
+    </body>
   </html>

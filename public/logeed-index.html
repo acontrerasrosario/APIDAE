@@ -1,0 +1,113 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,500">
+        <script language="JavaScript" type="text/javascript" src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified JavaScript -->
+        <link rel="stylesheet" text="text/css" href="./css/style.css">  
+        <script  type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="./js/materialize.min.js"></script>
+  
+        
+  </head>
+
+    <body>
+
+        
+        <!-- start nav bar -->
+          <nav>
+            <div class="nav-wrapper amber darken-2">
+              <div id ="logo" class="left ">
+                    <a href="javascript:void(0)" class="brand-logo ">
+                        <img src="./img/logo.png" id="header-logo" class="circle left mini-perfil">
+                        <h4>APIDAE</h4>
+                    </a>
+              </div>
+            </div>
+          </nav>
+
+         
+
+
+          <!-- Page Layout here -->
+            <div class="row">
+
+              <div class="col s3">
+                <!-- Grey navigation panel -->
+                <div id="info_user"class="card" >
+                    <div class="field">
+                      <span id="userinfo"class="header"></span>
+                        <div class="row">
+                            <div id="userImage"></div>
+                        </div>
+    
+                      <div class="button-container">
+                            <button id="btnLogout" onclick="LogOut()" type="button" class="button"><span>Log out</span></button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col s9">
+                <!-- Teal page content  -->
+                 <div id="CONTENT_COURSES"class="card">
+                  <div class="field">
+                    <span class="header">CURSOS</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          
+
+          
+
+
+
+
+
+
+
+
+            
+                  
+            
+
+            <script src="./js/index.js"></script>
+            <script>
+                firebase.auth().onAuthStateChanged(firebaseUser =>{
+                    var url = window.location.href;
+                    if(firebaseUser){
+                      console.log(firebaseUser);
+                      
+                     
+
+                      document.getElementById('userinfo').innerHTML='Bienvenido, '+firebaseUser.displayName;
+                      var elem = document.createElement("img");
+                      elem.setAttribute("src",firebaseUser.photoURL);
+                      elem.className = 'circle mini-perfil';
+                      elem.setAttribute('height','100px');
+                      elem.setAttribute('width','100px');
+                      document.getElementById('userImage').appendChild(elem);
+
+                    }
+                    else{
+                    console.log('not logged in');
+                    if(window.location.href !== '/'){
+                        window.location = '/';
+                      }
+                    }
+                    
+                  });
+              </script>
+    </body>
+  </html>
