@@ -13,19 +13,11 @@
             "startDate":"02/06/2017",
             "endDate":"04/22/2017",
             "days":{
-                "FRIDAY":[
-                    {
-                        "startTime":"16:00",
-                        "endTime":"18:00"
-                    }
-                ],
-                "SATURDAY":[
-                    {
-                        "startTime":"9:00",
-                        "endTime":"11:00"
-                    }
-                ]
-            } 
+                "FRIDAY":{"start":"16:00","end":"18:00"} ,
+                "SATURDAY":{"startTime":"9:00","endTime":"11:00"}
+            },
+            "students":["1061938"],
+            "teacher":"105XXXX" 
         }
     },
     "persons":{
@@ -34,63 +26,31 @@
             "lastName":"Contreras Rosario",
             "email":"acontrerasrosario@gmail.com",
             "type":1,
-            "active":1
+            "active":1,
+            "seccion":["s1"]
         },
         "105XXXX":{
             "name":"Evelin",
             "lastName":"Guerra",
             "email":"evelin.guerra@intec.edu.do",
             "type":0,
-            "active":1
-        }
-    },
-    "inscription":{
-        "s1":{
-            "1061938":{
-                "name":"Angel Emilio",
-                "lastName":"Contreras Rosario"
-                
-            },
-                "105XXXX":{
-                "name":"Evelin",
-                "lastName":"Guerra"
-                
-                }
+            "active":1,
+            "seccion":["s1"]
         }
     },
     "records":{
         "s1":{
-            "day1":{
-                "1061938":{
-                "name":"Angel Emilio",
-                "lastName":"Contreras Rosario",
-                "date":"02/04/2017",
-                "entryHour":"16:06",
-                "exitHour":"17:50"
+            "02/10/2017":{
+                "students":{
+                    "1061938":["16:06","17:50"]
+                },
+                "Teacher":["16:10","17:59"]
             },
-                "105XXXX":{
-                "name":"Evelin",
-                "lastName":"Guerra",
-                "date":"02/04/2017",
-                "entryHour":"16:10",
-                "exitHour":"17:59"
-                }
-            },
-            "day2":{
-                "1061938":{
-                "name":"Angel Emilio",
-                "lastName":"Contreras Rosario",
-                "date":"02/10/2017",
-                "entryHour":"9:06",
-                "exitHour":"11:50"
-            },
-                "105XXXX":{
-                "name":"Evelin",
-                "lastName":"Guerra",
-                "date":"02/11/2017",
-                "entryHour":"9:10",
-                "exitHour":"11:59"
-                }
+            "02/11/2017":{
+                "students":{
+                    "1061938":["9:06","11:50"]
+                },
+                "Teacher":["9:10","11:59"]
             }   
         }
     }
