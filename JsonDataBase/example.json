@@ -1,0 +1,57 @@
+{
+    "courses":{
+        "ING302":{
+            "name": "GESTION DE PROYECTOS"
+        }
+    },
+    "sections":{
+        "s1":{
+            "course":"ING302",
+            "num":1,
+            "classroom":"AJ303",
+            "period":"FEBRUARY-APRIL 2017",
+            "startDate":"02/06/2017",
+            "endDate":"04/22/2017",
+            "days":{
+                "FRIDAY":{"start":"16:00","end":"18:00"} ,
+                "SATURDAY":{"startTime":"9:00","endTime":"11:00"}
+            },
+            "students":["1061938"],
+            "teacher":"105XXXX" 
+        }
+    },
+    "persons":{
+        "1061938":{
+            "name":"Angel Emilio",
+            "lastName":"Contreras Rosario",
+            "email":"acontrerasrosario@gmail.com",
+            "type":1,
+            "active":1,
+            "seccion":["s1"]
+        },
+        "105XXXX":{
+            "name":"Evelin",
+            "lastName":"Guerra",
+            "email":"evelin.guerra@intec.edu.do",
+            "type":0,
+            "active":1,
+            "seccion":["s1"]
+        }
+    },
+    "records":{
+        "s1":{
+            "02/10/2017":{
+                "students":{
+                    "1061938":["16:06","17:50"]
+                },
+                "Teacher":["16:10","17:59"]
+            },
+            "02/11/2017":{
+                "students":{
+                    "1061938":["9:06","11:50"]
+                },
+                "Teacher":["9:10","11:59"]
+            }   
+        }
+    }
+}

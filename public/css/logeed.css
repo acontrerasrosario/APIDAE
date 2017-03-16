@@ -1,0 +1,5 @@
+#info_user .card{
+    display: block;
+    position: relative;
+    margin: 50px auto;
+}
