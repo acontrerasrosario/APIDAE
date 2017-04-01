@@ -6,13 +6,14 @@
 
  // Initialize Firebase
 const config = {
-    apiKey: "AIzaSyB0IXn8A10yGVM5rGR871L7i2BapIOMgQQ",
-    authDomain: "apidae-4f97d.firebaseapp.com",
-    databaseURL: "https://apidae-4f97d.firebaseio.com",
-    storageBucket: "apidae-4f97d.appspot.com",
-    messagingSenderId: "841472032050"
+    apiKey: "AIzaSyAVJ5yBzKo2wDpm6fPtAPLmMEydVTz0GTk",
+    authDomain: "apidae-85302.firebaseapp.com",
+    databaseURL: "https://apidae-85302.firebaseio.com",
+    projectId: "apidae-85302",
+    storageBucket: "apidae-85302.appspot.com",
+    messagingSenderId: "897970470930"
   };
-firebase.initializeApp(config);
+  firebase.initializeApp(config);
 var storage = firebase.storage();
 
 // get elements

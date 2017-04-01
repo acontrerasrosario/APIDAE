@@ -1,0 +1,91 @@
+{
+  "COURSES" : {
+    "ING302" : {
+      "NAME" : "GESTION DE PROYECTOS"
+    }
+  },
+  "PERSONS" : {
+    "1060781" : {
+      "EMAIL" : "nicoleguzmancleto.ngcgmail.com",
+      "LASTNAME" : "Guzmán",
+      "NAME" : "Nicole",
+      "SECTION" : {
+        "S1" : true
+      },
+      "TYPE" : 1
+    },
+    "1061106" : {
+      "EMAIL" : "1061106@est.intec.edu.do",
+      "LASTNAME" : "Rodriguez Vasquez",
+      "NAME" : "Jean Jose",
+      "SECTION" : {
+        "S1" : true
+      },
+      "TYPE" : 1
+    },
+    "1061938" : {
+      "EMAIL" : "acontrerasrosario@gmail.com",
+      "LASTNAME" : "Contreras Rosario",
+      "NAME" : "Angel Emilio",
+      "SECTION" : {
+        "S1" : true
+      },
+      "TYPE" : 1
+    },
+    "105XXXX" : {
+      "EMAIL" : "evelin.guerra@intec.edu.do",
+      "LASTNAME" : "Guerra",
+      "NAME" : "Evelin",
+      "SECTION" : {
+        "S1" : true
+      },
+      "TYPE" : 0
+    }
+  },
+  "RECORDS" : {
+    "S1" : {
+      "3-25-2017" : {
+        "STUDENT" : {
+          "1061106" : {
+            "ARRIVE" : "9:34:05",
+            "LEFT": "10:54:31"
+          },
+          "1061938" : {
+            "ARRIVE" : "9:10:12",
+            "LEFT": "10:51:31"
+          }
+        },
+        "TEACHER":{
+          "105XXXX":{
+            "ARRIVE" : "9:00:05",
+            "LEFT": "10:59:07"
+          }
+        }
+      }
+    }
+  },
+  "SECTION" : {
+    "S1" : {
+      "CLASSROOM" : "AJ303",
+      "COURSE" : "ING302",
+      "DAYS" : {
+        "FRIDAY" : {
+          "END" : "18:00:00",
+          "START" : "16:00:00"
+        },
+        "SATURDAY" : {
+          "END" : "11:00:00",
+          "START" : "9:00:00"
+        }
+      },
+      "ENDDATE" : "04/22/2017",
+      "NUM" : 1,
+      "PERIOD" : "FEBRUARY-APRIL 2017",
+      "STARTDATE" : "02/06/2017",
+      "STUDENT" : {
+        "1061938" : true
+      },
+      "TEACHER" : "105XXXX"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\aecon\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] CLI Version:  3.5.0
+[debug] Platform:     win32
+[debug] Node Version: v6.9.5
+[debug] Time:         Fri Mar 31 2017 16:29:43 GMT-0400 (SA Western Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: D:\PROYECTOS\APIDAE
+[info] Public Directory: public
+[info] 
+[info] Server listening at: http://localhost:5000
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\aecon\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] CLI Version:  3.5.0
+[debug] Platform:     win32
+[debug] Node Version: v6.9.5
+[debug] Time:         Sat Apr 01 2017 16:57:34 GMT-0400 (SA Western Standard Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: D:\PROYECTOS\APIDAE
+[info] Public Directory: public
+[info] 
+[info] Server listening at: http://localhost:5000
